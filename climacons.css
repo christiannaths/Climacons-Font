@@ -1,0 +1,187 @@
+/* To use the Climacon icon font, simply use an empty inline element:
+
+    <i class="climacon cloud rain moon"></i>
+
+There are two ways of choosing an climacon: either by the filename of the
+corresponding SVG file, e.g. class="climacon cloud-drizzle-moon-alt",
+or by picking the elements of the climacon individually:
+
+ * cloud
+ * sun or moon
+ * rain, drizzle, fog, snow, hail, wind or lightning
+ * (all of the above except wind and lightning and snow are also available in alternative versions, e.g.
+   rain-alt, dizzle-alt etc)
+
+*/
+
+@font-face {
+    font-family:'ClimaconsRegular';
+    src: url('climacons-webfont.eot');
+    src: url('climacons-webfont.eot?#iefix') format('embedded-opentype'),
+         url('climacons-webfont.woff') format('woff'),
+         url('climacons-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.climacon:before {
+  font-family: "ClimaconsRegular";
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit;
+}
+
+/* Basic icons, donsame for both naming conventions */
+
+.climacon.cloud:before                  { content: "`"; }
+.climacon.moon:before                   { content: "/"; }
+.climacon.shades:before                 { content: "}"; }
+.climacon.snowflake:before              { content: "*"; }
+.climacon.sun:before                    { content: "v"; }
+.climacon.sunrise:before                { content: "n"; }
+.climacon.sunset:before                 { content: "b"; }
+.climacon.thermometer:before            { content: ")"; }
+.climacon.tornado:before                { content: "("; }
+.climacon.umbrella:before               { content: "{"; }
+.climacon.wind:before                   { content: "k"; }
+.climacon.compass:before                { content: "Y"; }
+.climacon.degrees-celcius:before        { content: "R"; }
+.climacon.degrees-fahrenheit:before     { content: "T"; }
+
+/* Icons by SVG filename */
+
+.climacon.cloud-download:before         { content: "S"; }
+.climacon.cloud-drizzle-alt:before      { content: "6"; }
+.climacon.cloud-drizzle-moon-alt:before { content: "8"; }
+.climacon.cloud-drizzle-moon:before     { content: "5"; }
+.climacon.cloud-drizzle-sun-alt:before  { content: "7"; }
+.climacon.cloud-drizzle-sun:before      { content: "4"; }
+.climacon.cloud-drizzle:before          { content: "3"; }
+.climacon.cloud-fog-alt:before          { content: "g"; }
+.climacon.cloud-fog-moon-alt:before     { content: "j"; }
+.climacon.cloud-fog-moon:before         { content: "f"; }
+.climacon.cloud-fog-sun-alt:before      { content: "h"; }
+.climacon.cloud-fog-sun:before          { content: "d"; }
+.climacon.cloud-fog:before              { content: "s"; }
+.climacon.cloud-hail-alt:before         { content: "y"; }
+.climacon.cloud-hail-moon-alt:before    { content: "i"; }
+.climacon.cloud-hail-moon:before        { content: "t"; }
+.climacon.cloud-hail-sun-alt:before     { content: "u"; }
+.climacon.cloud-hail-sun:before         { content: "r"; }
+.climacon.cloud-hail:before             { content: "e"; }
+.climacon.cloud-lightning-moon:before   { content: "c"; }
+.climacon.cloud-lightning-sun:before    { content: "x"; }
+.climacon.cloud-lightning:before        { content: "z"; }
+.climacon.cloud-moon:before             { content: "2"; }
+.climacon.cloud-rain-alt:before         { content: "="; }
+.climacon.cloud-rain-moon-alt:before    { content: "w"; }
+.climacon.cloud-rain-moon:before        { content: "-"; }
+.climacon.cloud-rain-sun-alt:before     { content: "q"; }
+.climacon.cloud-rain-sun:before         { content: "0"; }
+.climacon.cloud-rain:before             { content: "9"; }
+.climacon.cloud-refresh:before          { content: "|"; }
+.climacon.cloud-snow-alt:before         { content: "]"; }
+.climacon.cloud-snow-moon-alt:before    { content: "a"; }
+.climacon.cloud-snow-moon:before        { content: "["; }
+.climacon.cloud-snow-sun-alt:before     { content: "\\"; }
+.climacon.cloud-snow-sun:before         { content: "p"; }
+.climacon.cloud-snow:before             { content: "o"; }
+.climacon.cloud-sun:before              { content: "1"; }
+.climacon.cloud-upload:before           { content: "A"; }
+.climacon.cloud-wind-moon:before        { content: "'"; }
+.climacon.cloud-wind-sun:before         { content: ";"; }
+.climacon.cloud-wind:before             { content: "l"; }
+.climacon.compass-east:before           { content: "I"; }
+.climacon.compass-north:before          { content: "U"; }
+.climacon.compass-south:before          { content: "O"; }
+.climacon.compass-west:before           { content: "P"; }
+.climacon.moon-first-quarter:before     { content: "@"; }
+.climacon.moon-full:before              { content: "$"; }
+.climacon.moon-last-quarter:before      { content: "^"; }
+.climacon.moon-new:before               { content: "~"; }
+.climacon.moon-waning-crescent:before   { content: "&"; }
+.climacon.moon-waning-gibbous:before    { content: "%"; }
+.climacon.moon-waxing-crescent:before   { content: "!"; }
+.climacon.moon-waxing-gibbous:before    { content: "#"; }
+.climacon.sun-low:before                { content: "m"; }
+.climacon.sun-lower:before              { content: ","; }
+.climacon.thermometer-25:before         { content: "+"; }
+.climacon.thermometer-50:before         { content: "Q"; }
+.climacon.thermometer-75:before         { content: "E"; }
+.climacon.thermometer-100:before        { content: "E"; }
+.climacon.thermometer-zero:before       { content: "_"; }
+
+/* Icons by compound names */
+
+.climacon.cloud.moon             { content: "0"; }
+.climacon.cloud.sun              { content: "1"; }
+.climacon.sun.low                { content: "m"; }
+.climacon.sun.lower              { content: ","; }
+
+.climacon.cloud.download         { content: "S"; }
+.climacon.cloud.refresh          { content: "|"; }
+.climacon.cloud.upload           { content: "A"; }
+
+.climacon.cloud.drizzle          { content: "3"; }
+.climacon.cloud.drizzle.moon     { content: "5"; }
+.climacon.cloud.drizzle.sun      { content: "6"; }
+.climacon.cloud.drizzle-alt      { content: "7"; }
+.climacon.cloud.drizzle-alt.moon { content: "8"; }
+.climacon.cloud.drizzle-alt.sun  { content: "4"; }
+
+.climacon.cloud.fog              { content: "s"; }
+.climacon.cloud.fog-moon         { content: "f"; }
+.climacon.cloud.fog-sun          { content: "g"; }
+.climacon.cloud.fog-alt          { content: "h"; }
+.climacon.cloud.fog-alt.moon     { content: "j"; }
+.climacon.cloud.fog-alt.sun      { content: "d"; }
+
+.climacon.cloud.hail             { content: "e"; }
+.climacon.cloud.hail.moon        { content: "t"; }
+.climacon.cloud.hail.sun         { content: "y"; }
+.climacon.cloud.hail-alt         { content: "u"; }
+.climacon.cloud.hail-alt.moon    { content: "i"; }
+.climacon.cloud.hail-alt.sun     { content: "r"; }
+
+.climacon.cloud.lightning        { content: "z"; }
+.climacon.cloud.lightning.moon   { content: "c"; }
+.climacon.cloud.lightning.sun    { content: "x"; }
+
+.climacon.cloud.rain             { content: "9"; }
+.climacon.cloud.rain.moon        { content: "-"; }
+.climacon.cloud.rain.sun         { content: "0"; }
+.climacon.cloud.rain-alt         { content: "="; }
+.climacon.cloud.rain-alt.moon    { content: "w"; }
+.climacon.cloud.rain-alt.sun     { content: "q"; }
+
+.climacon.cloud.snow             { content: "o"; }
+.climacon.cloud.snow.moon        { content: "["; }
+.climacon.cloud.snow.sun         { content: "p"; }
+.climacon.cloud.snow-alt         { content: "]"; }
+.climacon.cloud.snow-alt.moon    { content: "a"; }
+.climacon.cloud.snow-alt.sun     { content: "\\";}
+
+.climacon.cloud.wind             { content: "l"; }
+.climacon.cloud.wind.moon        { content: "'"; }
+.climacon.cloud.wind.sun         { content: ";"; }
+
+.climacon.compass.east           { content: "I"; }
+.climacon.compass.north          { content: "U"; }
+.climacon.compass.south          { content: "O"; }
+.climacon.compass.west           { content: "P"; }
+
+.climacon.moon._0, .climacon.moon.new               { content: "~"; }
+.climacon.moon._1, .climacon.moon.waxing-crescent   { content: "!"; }
+.climacon.moon._2, .climacon.moon.first-quarter     { content: "@"; }
+.climacon.moon._3, .climacon.moon.waxing-gibbous    { content: "#"; }
+.climacon.moon._4, .climacon.moon.full              { content: "$"; }
+.climacon.moon._5, .climacon.moon.waning-gibbous    { content: "%"; }
+.climacon.moon._6, .climacon.moon.last-quarter      { content: "^"; }
+.climacon.moon._7, .climacon.moon.waning-crescent   { content: "&"; }
+
+.climacon.thermometer._0        { content: "_"; }
+.climacon.thermometer._1        { content: "+"; }
+.climacon.thermometer._2        { content: "Q"; }
+.climacon.thermometer._3        { content: "E"; }
+.climacon.thermometer._4        { content: "E"; }
