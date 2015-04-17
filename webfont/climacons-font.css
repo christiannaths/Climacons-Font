@@ -255,10 +255,12 @@
 .climacon.thermometer.full:before {
 	content: "\e03d";
 }
-.climacon.celcius:before {
+.climacon.celcius:before,
+.climacon.celsius:before {
 	content: "\e03e";
 }
-.climacon.farenheit:before {
+.climacon.farenheit:before,
+.climacon.fahrenheit:before {
 	content: "\e03f";
 }
 .climacon.compass:before {
